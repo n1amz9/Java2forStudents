@@ -21,4 +21,17 @@ public class Wall implements Barriers{
     public void setHeight(int height) {
         this.height = height;
     }
+
+    public boolean isRanAcross(Members members) {
+        if (members.getMaxHeight() >= height)  {
+            System.out.println("Участник перепрыгнул " + this.name + " высотой " + height);
+            return true;
+        }
+        else {
+            System.out.println("Участник не перепрыгнул " + this.name + ", высотой " + height);
+            return false;
+        }
+    }
+
+
 }

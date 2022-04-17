@@ -8,8 +8,27 @@ public interface Members {
     int age = 0;
 
 
-    private void run() {}
 
-    private void jump() {}
+
+    default int getMaxHeight() {
+        return maxHeight;
+    }
+
+    default int getMaxLength() {
+        return maxLength;
+    }
+
+    default String getName() {
+        return name;
+    }
+
+    default void run () {
+        System.out.println(this.name + " побежал");
+    }
+
+    default void jump () {
+        System.out.println(this.name + " прыгнул");
+    }
+
 
 }

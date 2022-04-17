@@ -20,11 +20,11 @@ public class Robot implements Members{
         return maxLength;
     }
 
-    protected void run () {
+    public void run () {
         System.out.println(this.name + " побежал");
     }
 
-    protected void jump () {
+    public void jump () {
         System.out.println(this.name + " прыгнул");
     }
 }

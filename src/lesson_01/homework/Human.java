@@ -12,11 +12,11 @@ public class Human implements Members {
         this.age = age;
     }
 
-    protected void run () {
+    public void run () {
         System.out.println(this.name + " побежал");
     }
 
-    protected void jump () {
+    public void jump () {
         System.out.println(this.name + " прыгнул");
     }
 

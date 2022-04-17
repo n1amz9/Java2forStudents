@@ -15,11 +15,17 @@ public class TestMain {
         robots[1] = new Robot("R2D2", 20);
         humans[0] = new Human("Аркадий", 20);
         humans[1] = new Human("Виталя", 34);
+        treadmills[0] = new Treadmill("Дорожка №1",20);
+        walls[0] = new Wall("Стена №1", 10);
 
-        for (int i = 0; i < 2; i++) {
-            robots[i].run();
-            cats[i].run();
-            humans[i].run();
-        }
+        System.out.println(treadmills[0].isRanAcross(robots[1]));
+        System.out.println(walls[0].isRanAcross(cats[1]));
+
+
+//        for (int i = 0; i < 2; i++) {
+//            robots[i].run();
+//            cats[i].run();
+//            humans[i].run();
+//        }
     }
 }

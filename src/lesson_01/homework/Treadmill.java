@@ -21,4 +21,15 @@ public class Treadmill implements Barriers{
     public void setLength(int length) {
         this.length = length;
     }
+
+    public boolean isRanAcross(Members members) {
+        if (members.getMaxLength() >= length)  {
+            System.out.println("Участник перебежал "  + this.name + " длиной " + length);
+            return true;
+        }
+        else {
+            System.out.println("Участник не перебежал " + this.name + " длиной " + length);
+            return false;
+        }
+    }
 }

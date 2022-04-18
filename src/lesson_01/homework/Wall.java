@@ -23,6 +23,7 @@ public class Wall implements Barriers{
     }
 
     public boolean isRanAcross(Members members) {
+        members.jump();
         if (members.getMaxHeight() >= height)  {
             System.out.println("Участник перепрыгнул " + this.name + " высотой " + height);
             return true;

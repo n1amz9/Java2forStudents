@@ -2,6 +2,7 @@ package lesson_01.homework;
 
 public class Human implements Members {
 
+    boolean isIncluded = true;
     private String name;
     private int age;
     private int maxHeight = 60;

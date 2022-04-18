@@ -2,9 +2,10 @@ package lesson_01.homework;
 
 public class Robot implements Members{
 
+    boolean isIncluded = true;
     private final String name;
     private final int age;
-    private int maxHeight = 10;
+    private int maxHeight = 50;
     private int maxLength = 500;
 
     public Robot(String name, int age) {

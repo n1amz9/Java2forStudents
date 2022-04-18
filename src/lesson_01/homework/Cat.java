@@ -2,10 +2,11 @@ package lesson_01.homework;
 
 public class Cat implements Members{
 
+    boolean isIncluded = true;
     private final String name;
     private final int age;
     private final int maxHeight = 100;
-    private final int maxLength = 200;
+    private final int maxLength = 100;
 
     public Cat(String name, int age) {
         this.name = name;

@@ -23,6 +23,7 @@ public class Treadmill implements Barriers{
     }
 
     public boolean isRanAcross(Members members) {
+        members.run();
         if (members.getMaxLength() >= length)  {
             System.out.println("Участник перебежал "  + this.name + " длиной " + length);
             return true;

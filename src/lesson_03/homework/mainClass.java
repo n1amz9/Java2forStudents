@@ -12,7 +12,15 @@ public class mainClass {
         PhoneBook.add("Eugene", "89263232244");
         PhoneBook.add("Eugene", "89263232244");
 
+
+        PhoneBook.newAdd("Petrov", "8988282888");
+        PhoneBook.newAdd("Petrov", "898234888");
+        PhoneBook.newAdd("Petrovichev", "89832244888");
+        PhoneBook.newAdd("Titov", "89882123888");
+        PhoneBook.newAdd("Golovin", "89832122888");
+
         PhoneBook.get("Eugene");
+        System.out.printf("Пользователь с такой фамилией имеет следующие номер(а) %s %n", PhoneBook.newGet("Petrov"));
 
 
     }
